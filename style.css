@@ -1,0 +1,49 @@
+*{
+    box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+}
+
+.header{
+    height: 72px;
+    /* background-color: red; */
+    outline: 1px solid #CCC;
+    padding: 0px 10px;
+    padding-left: 80px;
+    display: flex;
+    /* Here height will be middle of 75 px  */
+    align-items: center; 
+}
+img{
+    width: 100%;
+}
+/*This will take width according to its parent(image)  */
+.logoContainer{
+width: 160px;
+}
+.searchIcon{
+    width: 30px;
+    padding: 5px;
+}
+.searchInputContainer{
+    width: 400px;
+    height: 45px;
+    outline: 1px solid #ccc;
+    display: flex;
+    margin-left: 25px;
+    border-radius: 3px;
+    align-items: center;
+    padding: 7px;
+}
+.inputSearch{
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+}
