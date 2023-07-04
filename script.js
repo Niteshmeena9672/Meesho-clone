@@ -3,15 +3,16 @@ let recentInput = [];
 let inputFormE1 = document.querySelector("#inputForm");
 const listofRecentE1 = document.querySelector(".listofRecent");
 
-inputFormE1.addEventListener("submit",(e)=>{
-    e.preventDefault();
-    let listofRecentHTMLE1 = "";
+inputFormE1.addEventListener("submit", (e) => {
+  e.preventDefault();
+  let listofRecentHTMLE1 = "";
 
-    recentInput.push(inputSearchE1.value);
-    console.log(recentInput);
-    if(recentInput.length > 0){
-        for(let i = 0; i< recentInput.length ; i++){
-            listofRecentHTMLE1 += `
+  recentInput.unshift(inputSearchE1.value);
+  // push use to push work as a queue and unshift work a stack
+  console.log(recentInput);
+  if (recentInput.length > 0) {
+    for (let i = 0; i < recentInput.length; i++) {
+      listofRecentHTMLE1 += `
             <div class="recentItem">
 
             <div class="recentIcon">
@@ -19,8 +20,8 @@ inputFormE1.addEventListener("submit",(e)=>{
             </div>
             <p>${recentInput[i]}</p>
           </div>
-            `
-        }
-        listofRecentE1.innerHTML = listofRecentHTMLE1;
+            `;
     }
+    listofRecentE1.innerHTML = listofRecentHTMLE1;
+  }
 });
