@@ -1,0 +1,4 @@
+qns 1 
+What will do in js file type = module
+qns 2 
+Use of join method in map function

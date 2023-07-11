@@ -206,7 +206,7 @@ nav ul li:hover{
     position:absolute;
     width: 99vw;
 
-    top: 123px;
+    top: 120px; 
     left: 10px;
     right: 10px;
     /* here we give position absolute so widht in % is taken according to it's parent element that's why we use vw height for adjusting height accoring to display */
@@ -217,8 +217,9 @@ nav ul li:hover{
     border: 1px solid #ccc;
     box-shadow: -1px 0px 1px 1px #ccc, 1px 0px 1px 1px #ccc;
     /* box shadow orientaiton */
-    height: 400px;
-
+    /* height: 400px; */
+    /* padding: 20px; */
+    padding-left: 20px;
     display: none;
 }
 
@@ -226,4 +227,17 @@ nav ul li:hover .subMenu{
     /* position: absolute; */
     display:block;
     /* background-color: red; */
+}
+
+.subMenu p{
+    color: var(--textColor);
+}
+.subMenuList{
+    display: flex;
+}
+nav ul li{
+    padding-right: 20px;
+}
+.column{
+    margin-right: 40px;
 }

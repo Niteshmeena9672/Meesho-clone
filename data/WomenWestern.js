@@ -13,7 +13,7 @@ const WomenWestern = [
     },
     {
         heading : "Sleepwear",
-        data : ["Nightsuits","Babydolls"]
+        data : ["Nighsuits","Baby  dolls"]
     },
 ]
 
