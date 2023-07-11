@@ -2,3 +2,7 @@ qns 1
 What will do in js file type = module
 qns 2 
 Use of join method in map function
+qns 3
+difference bewteen border and outline
+
+difference between max-width and width
