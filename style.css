@@ -78,6 +78,7 @@ form{
     display: none;
     padding: 15px;
     box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    border-radius:0px 0px 20px 20px;
 }
 .searchInputContainer:focus-within .searchRecentModal{
     display: block;
@@ -112,7 +113,7 @@ form{
 }
 .downloadBtn{
     display: block;
-    width:180px ;
+    width:160px ;
     margin-top: 10px;
     /* box-shadow: 0px 0px 5px rgba(0,0,0,0.3); */
 }
@@ -124,10 +125,12 @@ form{
     width: 100%;
     /* background-color: red; */
     display: none;
-    height: 200px;
+    height: 170px;
     padding: 10px;
     color: var(--textColor);
     background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    
     
 }
 .downloadContainer:hover .downloadHoverBtnContainer{
@@ -363,4 +366,34 @@ hr{
 }
 .topCategoreisImage img:first-child{
     width:410px;
+}
+
+.essentialsContainer{
+    width: 100%;
+    background-image: url(./data/image_source/1678691743015_1200.webp);
+    height:500px;
+    background-repeat: no-repeat;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.essentialsContainer img{
+    max-width: 180px;
+}
+
+.esseneital_item{
+    
+    margin-left: 50px;
+    margin-right: 20px;
+    
+   
+}
+#essential_btn{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+#kitchenEssential{
+    width: 200px;
+    height: 70px;
 }
