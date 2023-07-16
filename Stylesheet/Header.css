@@ -164,6 +164,9 @@ form{
     flex-direction: column;
 }
 .becomeSupplierContainer{
+    height: 40px;
+    display: flex;
+    align-items: center;
     padding: 0px 30px;
     border-left: 2px solid #CCC;
     border-right: 2px solid #CCC;
