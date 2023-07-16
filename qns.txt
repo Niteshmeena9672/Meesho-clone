@@ -6,3 +6,8 @@ qns 3
 difference bewteen border and outline
 
 difference between max-width and width
+qns 4:
+what is use of root body
+Ans :
+:root is a pseudo selector while body is a type selector
+main difference is that root has higher priority than body
