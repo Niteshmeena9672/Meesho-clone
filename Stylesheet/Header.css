@@ -1,9 +1,7 @@
 *{
     box-sizing: border-box;
-
-
 }
-/* what is use of root body , and * */
+
 :root{
     --hoverTextColor: rgb(204, 39, 163);
     --textColor :#605d5d;
@@ -21,15 +19,15 @@ body{
 .header{
     height: 72px;
     /* background-color: red; */
-    outline: 1px solid #CCC;
-    padding: 0px 10px;
-    padding-left: 80px;
+    /* outline: 1px solid #CCC; */
+    margin: 0px 280px;
+    /* padding-left: 80px; */
     display: flex;
     /* Here height will be middle of 75 px  */
     align-items: center; 
     justify-content: space-between;  
     /* What is justify between */
-    font-weight: 510;
+    /* font-weight: 510; */
 }
 .headerRight,.headerLeft{
     display: flex;
