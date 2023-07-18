@@ -197,8 +197,8 @@ hr{
 .topCategoreisImage img:first-child{
     width:410px;
 }
-
-.essentialsContainer{
+/* Essential and New Style section */
+.essentialsContainer,.newStyleContainer{
     width: 100%;
     background-image: url(../data/image_source/essential_bg.webp);
     height:500px;
@@ -208,11 +208,14 @@ hr{
     align-items: center;
     /* justify-content: space-around; */
 }
-.essentialsContainer img{
+#newStylebg{
+    background-image: url(../data/image_source/New_style-bg.webp);
+}
+.essentialsContainer img,.newStyleContainer img{
     max-width: 180px;
 }
 
-.esseneital_item{
+.esseneital_item,.newStyle_item{
     
     margin-left: 50px;
     margin-right: 20px;
@@ -222,6 +225,10 @@ hr{
 #essential_btn{
     margin-left: 100px;
     margin-top: 20px;
+}
+#newStyle_btn{
+    margin-left: 120px;
+    margin-top: 70px;
 }
 #kitchenEssential{
     width: 200px;
