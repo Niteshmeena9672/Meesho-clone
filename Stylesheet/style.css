@@ -234,3 +234,45 @@ hr{
     width: 200px;
     height: 70px;
 }
+
+
+
+
+
+/* *********************************** */
+
+.becomeSellerBanner_container{
+    margin: 50px 0; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+/* it is how you can put something in right side  */
+.becomeSellerBanner_container img{
+    width: 100%;
+}
+.becomeSeller_content{
+    position: absolute;
+    top: 20px;
+    text-align: right;
+    padding-right: 50px;
+}
+.sellerBanner_downloadApp{
+    position: absolute;
+    top: 305px;
+    right: 0;
+}
+.becomeSeller_appDownload img{
+    width: 243px;
+    margin-right: 40px;
+    height: 64px;
+}
+.becomeSeller_content h2{
+    color: #5585f8;
+    font-size: 34px;
+}
+.becomeSeller_content h1{
+    color: #9f2089;
+    font-size: 48px;
+}
