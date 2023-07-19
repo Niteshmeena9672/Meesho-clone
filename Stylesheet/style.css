@@ -276,3 +276,55 @@ hr{
     color: #9f2089;
     font-size: 48px;
 }
+
+/* Supplier container */
+.messho_supplier_benefit{
+    display: flex;
+    align-items: center;
+    padding: 0px 40px;
+    border-right: 2px solid white;
+    font-size: 16px;
+}
+#meeshoSupplier_sellProduct{
+    font-size: 18px;
+}
+.meeshoSupplier_content{
+    padding-left: 40px;
+}
+.messho_supplier_benefit :first-child{
+    padding: 0px;
+    padding-right: 20px;
+}
+.meeshoSupplier_benefit_container{
+    display: flex;
+    margin: 5px 0px;
+}
+.meeshoSupplier_container{
+    position: relative;
+}
+.meeshoSupplier_container_content > p{
+    font-size: 34px;
+}
+.meeshoSupplier_container_content{
+    position: absolute;
+    top: 0;
+    padding: 5px 10px;
+    color: white;
+    
+    height: 10px;
+}
+.signup_btn_now{
+    position: absolute;
+    background-color: white;
+    color: var(--hoverTextColor);
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    height: 50px;
+    width: 150px;
+    padding: 15px 20px;
+    /* box-sizing: border-box; */
+    margin-top: 10px;
+    border-radius: 10px;
+
+}
