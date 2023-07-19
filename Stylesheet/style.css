@@ -1,330 +1,358 @@
-
 /* Navigation bar */
-:root{
-    --hoverTextColor: rgb(204, 39, 163);
-    --textColor :#605d5d;
+:root {
+  --hoverTextColor: rgb(204, 39, 163);
+  --textColor: #605d5d;
 }
-nav{
-    width: 100%;
-    border-bottom: 1px solid #ccc;
-    font-weight: 510;
-    height: 50px;
+nav {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+  font-weight: 510;
+  height: 50px;
 }
-nav ul{
-    padding: 0;
- 
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 10px;
-    height: 100%;
-    margin: 0;
-}
-nav ul li{
-    display: flex;
-    /* background-color: red; */
-    align-items: center;
-    /* position: relative; */
-}
-nav ul li:hover{
-    color: var(--hoverTextColor);
-    border-bottom: 3px solid var(--hoverTextColor);
-    cursor: pointer;
+nav ul {
+  padding: 0;
 
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
+  height: 100%;
+  margin: 0;
+}
+nav ul li {
+  display: flex;
+  /* background-color: red; */
+  align-items: center;
+  /* position: relative; */
+}
+nav ul li:hover {
+  color: var(--hoverTextColor);
+  border-bottom: 3px solid var(--hoverTextColor);
+  cursor: pointer;
 }
 
 /* Model box submenu */
 
-.subMenu{
-    position:absolute;
-    width: 99vw;
+.subMenu {
+  position: absolute;
+  width: 99vw;
 
-    top: 120px; 
-    left: 10px;
-    right: 10px;
-    /* here we give position absolute so widht in % is taken according to it's parent element that's why we use vw height for adjusting height accoring to display */
-    /* use of vw */
-    box-sizing: border-box;
-    /* what is box sizing */
-    background-color: white;
-    border: 1px solid #ccc;
-    box-shadow: -1px 0px 1px 1px #ccc, 1px 0px 1px 1px #ccc;
-    /* box shadow orientaiton */
-    /* height: 400px; */
-    /* padding: 20px; */
-    padding-left: 20px;
-    display: none;
-}
-
-nav ul li:hover .subMenu{
-    /* position: absolute; */
-    display:block;
-    /* background-color: red; */
+  top: 120px;
+  left: 10px;
+  right: 10px;
+  /* here we give position absolute so widht in % is taken according to it's parent element that's why we use vw height for adjusting height accoring to display */
+  /* use of vw */
+  box-sizing: border-box;
+  /* what is box sizing */
+  background-color: white;
+  border: 1px solid #ccc;
+  box-shadow: -1px 0px 1px 1px #ccc, 1px 0px 1px 1px #ccc;
+  /* box shadow orientaiton */
+  /* height: 400px; */
+  /* padding: 20px; */
+  padding-left: 20px;
+  display: none;
 }
 
-.subMenu p{
-    color: var(--textColor);
-}
-.subMenuList{
-    display: flex;
-}
-nav ul li{
-    padding-right: 20px;
-}
-.column{
-    margin-right: 40px;
+nav ul li:hover .subMenu {
+  /* position: absolute; */
+  display: block;
+  /* background-color: red; */
 }
 
+.subMenu p {
+  color: var(--textColor);
+}
+.subMenuList {
+  display: flex;
+}
+nav ul li {
+  padding-right: 20px;
+}
+.column {
+  margin-right: 40px;
+}
 
 /* lowest price section  */
 
-.lowestPriceContainer{
-    background-color:rgb(248, 248, 255);
-    display: flex;
-    margin: 50px auto;
-    max-width: 1100px;
+.lowestPriceContainer {
+  background-color: rgb(248, 248, 255);
+  display: flex;
+  margin: 50px auto;
+  max-width: 1100px;
 }
-.lowestPriceContainer h1{
-    font-size: 40px;
-    margin: 0px;
-    color: rgb(53, 53, 67);
-    font-weight: 00;
+.lowestPriceContainer h1 {
+  font-size: 40px;
+  margin: 0px;
+  color: rgb(53, 53, 67);
+  font-weight: 00;
 }
 
-.lowestPriceText{
-    width: 50%;
-    /* margin-top: 40px;
+.lowestPriceText {
+  width: 50%;
+  /* margin-top: 40px;
     margin-left: 40px; */
-    margin: 40px;
+  margin: 40px;
 }
-.lowestPriceImg{
-    width: 50%;
-}
-
-.lowestPriceIcon{
-    
-    width: 45px;
-    border-radius: 35px;
-    border: 1px solid grey;
-}
-.lowestPriceSub{
-    display: flex;
-    justify-content: space-between;
-    height: 50px;
-    margin: 20px 0;
-    width: 50%;
-}
-.lowestPriceItem{
-    padding:0px 20px;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    
-}
-#borderLowestItem{
-    border-right: 1px solid gray;
-    border-left: 1px solid gray;
-    
-}
-.lowestPriceItem p{
-    padding-left: 10px;
-    color: rgb(59, 53, 67);
-    font-weight: 600;
+.lowestPriceImg {
+  width: 50%;
 }
 
-.downloadAppContainer{
-    background-color: rgb(159, 32, 137);
-    display: flex;
-    align-items: center;
-    font-size: 20px;
-    height: 50px;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-    padding: 20px 10px;
-    margin-top: 35px;
+.lowestPriceIcon {
+  width: 45px;
+  border-radius: 35px;
+  border: 1px solid grey;
 }
-.downloadAppContainer p{
-    padding: 0 20px;
-    color: white;
+.lowestPriceSub {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+  margin: 20px 0;
+  width: 50%;
 }
-.downloadAppicon{
-    margin-left: 10px;
+.lowestPriceItem {
+  padding: 0px 20px;
+  display: flex;
+  align-items: center;
+  background-color: white;
 }
-
-.topCategoriesFrom{
-    width: 1100px;
-    margin: auto;
+#borderLowestItem {
+  border-right: 1px solid gray;
+  border-left: 1px solid gray;
 }
-.topCategoriesHeading{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.lowestPriceItem p {
+  padding-left: 10px;
+  color: rgb(59, 53, 67);
+  font-weight: 600;
 }
 
-hr{
-    width: 53%;
-    /* background-color: black; */
-    border: 1px solid var(--hoverTextColor);
+.downloadAppContainer {
+  background-color: rgb(159, 32, 137);
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 20px 10px;
+  margin-top: 35px;
 }
-.topCategoriesHeading h1{
-    width: max-content;
-    width: 800px;
-    display: flex;
-    color: rgb(53, 53, 67);
-    font-size: 35px;
+.downloadAppContainer p {
+  padding: 0 20px;
+  color: white;
 }
-.topCategoreisImage{
-    width: 100%;
-    height: 600px;
-    background-image: url(https://images.meesho.com/images/marketing/1678691670429_1200.webp);
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    /* display: flex;
+.downloadAppicon {
+  margin-left: 10px;
+}
+
+.topCategoriesFrom {
+  width: 1100px;
+  margin: auto;
+}
+.topCategoriesHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+hr {
+  width: 53%;
+  /* background-color: black; */
+  border: 1px solid var(--hoverTextColor);
+}
+.topCategoriesHeading h1 {
+  width: max-content;
+  width: 800px;
+  display: flex;
+  color: rgb(53, 53, 67);
+  font-size: 35px;
+}
+.topCategoreisImage {
+  width: 100%;
+  height: 600px;
+  background-image: url(https://images.meesho.com/images/marketing/1678691670429_1200.webp);
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  /* display: flex;
     align-items: flex-end; */
 }
-.topCategoreisImage img{
-    /* display: flex; */
-    /* position: absolute; */
-    width: 320px;
-    margin-top: 88px;
-    margin-left: 10px;
-    padding: 0 10px;
-    flex-direction: row;
-    /* justify-content: center;
+.topCategoreisImage img {
+  /* display: flex; */
+  /* position: absolute; */
+  width: 320px;
+  margin-top: 88px;
+  margin-left: 10px;
+  padding: 0 10px;
+  flex-direction: row;
+  /* justify-content: center;
     align-items: center; */
 }
-.topCategoreisImage img:first-child{
-    width:410px;
+.topCategoreisImage img:first-child {
+  width: 410px;
 }
 /* Essential and New Style section */
-.essentialsContainer,.newStyleContainer{
-    width: 100%;
-    background-image: url(../data/image_source/essential_bg.webp);
-    height:500px;
-    background-repeat: no-repeat;
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    /* justify-content: space-around; */
+.essentialsContainer,
+.newStyleContainer {
+  width: 100%;
+  background-image: url(../data/image_source/essential_bg.webp);
+  height: 500px;
+  background-repeat: no-repeat;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-around; */
 }
-#newStylebg{
-    background-image: url(../data/image_source/New_style-bg.webp);
+#newStylebg {
+  background-image: url(../data/image_source/New_style-bg.webp);
 }
-.essentialsContainer img,.newStyleContainer img{
-    max-width: 180px;
-}
-
-.esseneital_item,.newStyle_item{
-    
-    margin-left: 50px;
-    margin-right: 20px;
-    
-   
-}
-#essential_btn{
-    margin-left: 100px;
-    margin-top: 20px;
-}
-#newStyle_btn{
-    margin-left: 120px;
-    margin-top: 70px;
-}
-#kitchenEssential{
-    width: 200px;
-    height: 70px;
+.essentialsContainer img,
+.newStyleContainer img {
+  max-width: 180px;
 }
 
-
-
-
+.esseneital_item,
+.newStyle_item {
+  margin-left: 50px;
+  margin-right: 20px;
+}
+#essential_btn {
+  margin-left: 100px;
+  margin-top: 20px;
+}
+#newStyle_btn {
+  margin-left: 120px;
+  margin-top: 70px;
+}
+#kitchenEssential {
+  width: 200px;
+  height: 70px;
+}
 
 /* *********************************** */
 
-.becomeSellerBanner_container{
-    margin: 50px 0; 
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+.becomeSellerBanner_container {
+  margin: 50px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 /* it is how you can put something in right side  */
-.becomeSellerBanner_container img{
-    width: 100%;
+.becomeSellerBanner_container img {
+  width: 100%;
 }
-.becomeSeller_content{
-    position: absolute;
-    top: 20px;
-    text-align: right;
-    padding-right: 50px;
+.becomeSeller_content {
+  position: absolute;
+  top: 20px;
+  text-align: right;
+  padding-right: 50px;
 }
-.sellerBanner_downloadApp{
-    position: absolute;
-    top: 305px;
-    right: 0;
+.sellerBanner_downloadApp {
+  position: absolute;
+  top: 305px;
+  right: 0;
 }
-.becomeSeller_appDownload img{
-    width: 243px;
-    margin-right: 40px;
-    height: 64px;
+.becomeSeller_appDownload img {
+  width: 243px;
+  margin-right: 40px;
+  height: 64px;
 }
-.becomeSeller_content h2{
-    color: #5585f8;
-    font-size: 34px;
+.becomeSeller_content h2 {
+  color: #5585f8;
+  font-size: 34px;
 }
-.becomeSeller_content h1{
-    color: #9f2089;
-    font-size: 48px;
+.becomeSeller_content h1 {
+  color: #9f2089;
+  font-size: 48px;
 }
 
 /* Supplier container */
-.messho_supplier_benefit{
-    display: flex;
-    align-items: center;
-    padding: 0px 40px;
-    border-right: 2px solid white;
-    font-size: 16px;
+.messho_supplier_benefit {
+  display: flex;
+  align-items: center;
+  padding: 0px 40px;
+  border-right: 2px solid white;
+  font-size: 16px;
 }
-#meeshoSupplier_sellProduct{
-    font-size: 18px;
+#meeshoSupplier_sellProduct {
+  font-size: 18px;
 }
-.meeshoSupplier_content{
-    padding-left: 40px;
+.meeshoSupplier_content {
+  padding-left: 40px;
 }
-.messho_supplier_benefit :first-child{
-    padding: 0px;
-    padding-right: 20px;
+.messho_supplier_benefit :first-child {
+  padding: 0px;
+  padding-right: 20px;
 }
-.meeshoSupplier_benefit_container{
-    display: flex;
-    margin: 5px 0px;
+.meeshoSupplier_benefit_container {
+  display: flex;
+  margin: 5px 0px;
 }
-.meeshoSupplier_container{
-    position: relative;
+.meeshoSupplier_container {
+  position: relative;
 }
-.meeshoSupplier_container_content > p{
-    font-size: 34px;
+.meeshoSupplier_container_content > p {
+  font-size: 34px;
 }
-.meeshoSupplier_container_content{
-    position: absolute;
-    top: 0;
-    padding: 5px 10px;
-    color: white;
-    
-    height: 10px;
-}
-.signup_btn_now{
-    position: absolute;
-    background-color: white;
-    color: var(--hoverTextColor);
-    font-size: 20px;
-    font-weight: bold;
-    text-decoration: none;
-    height: 50px;
-    width: 150px;
-    padding: 15px 20px;
-    /* box-sizing: border-box; */
-    margin-top: 10px;
-    border-radius: 10px;
+.meeshoSupplier_container_content {
+  position: absolute;
+  top: 0;
+  padding: 5px 10px;
+  color: white;
 
+  height: 10px;
+}
+.signup_btn_now {
+  position: absolute;
+  background-color: white;
+  color: var(--hoverTextColor);
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  height: 50px;
+  width: 150px;
+  padding: 15px 20px;
+  /* box-sizing: border-box; */
+  margin-top: 10px;
+  border-radius: 10px;
+}
+.Product_container_you {
+  /* display: flex; */
+  min-height: 500px;
+  /* background-color: gray; */
+  padding: 10px;
+}
+.Product_container_you_content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  height: 100%;
+  gap: 30px;
+}
+.product_category_you_aside {
+  /* background-color: red; */
+  height: 100%;
+}
+.product_category_display {
+  /* background-color: green; */
+  height: 100%;
+}
+.search_Category_input {
+  display: flex;
+  padding: 15px;
+  font-size: 18px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+}
+.search_Category_input input {
+  /* display: flex; */
+  font-size: 18px;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0px 10px;;
+}
+.display_category_list{
+    padding: 20px 10px;  
 }

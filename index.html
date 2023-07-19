@@ -20,6 +20,8 @@
       href="https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Condensed&family=Roboto:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <!-- Font awesome libray for icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <header class="header">
@@ -300,11 +302,13 @@
 
       <!-- Meesho supplier container -->
       <div class="meeshoSupplier_container">
-        <img src="./data/image_source/meesho_supplier-bg.webp" alt="">
+        <img src="./data/image_source/meesho_supplier-bg.webp" alt="" />
         <div class="meeshoSupplier_content">
           <div class="meeshoSupplier_container_content">
             <p>Register as a Meesho Supplier</p>
-            <p id="meeshoSupplier_sellProduct">Sell your products to crores of customers at 0% commission</p>
+            <p id="meeshoSupplier_sellProduct">
+              Sell your products to crores of customers at 0% commission
+            </p>
             <div class="meeshoSupplier_benefit_container">
               <div class="messho_supplier_benefit">
                 <p>Grow your business 10x</p>
@@ -316,17 +320,45 @@
                 <p>Sell all over India</p>
               </div>
             </div>
-            <a href="#" class="signup_btn_now">
-              Sign up now
-            </a>
+            <a href="#" class="signup_btn_now"> Sign up now </a>
           </div>
         </div>
       </div>
     </div>
 
     <!-- Product for you -->
-    <div class="Product_container">
-      
+    <div class="Product_container_you">
+      <h1>Products For You</h1>
+      <div class="Product_container_you_content">
+        <aside class="product_category_you_aside">
+          <h3>
+            Category
+          </h3>
+          <div class="search_Category_input">
+            <i class="fa-solid fa-magnifying-glass">
+
+            </i>
+              <input type="text" placeholder="Search">
+          </div>
+          <div class="display_category_list">
+            <label for="Electronics">
+              <input type="checkbox"><span>Electronics</span>
+            </label>
+          </div>
+          
+        </aside>
+        <main class="product_category_display">
+          <div class="">
+            <div class="product_image">
+              <img src="" alt="">
+            </div>
+            <h3>name</h3>
+            <p class="product_price">
+              <span>₹133</span>
+            </p>
+          </div>
+        </main>
+      </div>
     </div>
 
     <script src="script.js" type="module"></script>
