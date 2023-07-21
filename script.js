@@ -129,7 +129,7 @@ function renderProductData(){
   let filterDataHtml ="";
   if(filterData[0]){
     filterData.forEach(el=>{
-      filterDataHtml+=`<div class="productCard">
+      filterDataHtml+=`<div class="productCard" onClick = "clickProduct(${el.id})">
       <div class="product_image">
         <img src="./productImage/${el.img}
         " alt="">
@@ -144,7 +144,7 @@ function renderProductData(){
 }
 else{
   ProductData.forEach(el=>{
-    filterDataHtml+=`<div class="productCard">
+    filterDataHtml+=`<div class="productCard" onclick  = "clickProduct(${el.id})">
       <div class="product_image">
         <img src="./productImage/${el.img}
         " alt="">
@@ -160,3 +160,8 @@ else{
   document.getElementById("product_category_displayID").innerHTML=filterDataHtml;
 };
 renderProductData();
+
+function clickProduct(id){
+  localStorage.setItem("productId",JSON.stringify(id));
+  window.location("./page/product.html")
+}
