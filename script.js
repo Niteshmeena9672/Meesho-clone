@@ -129,7 +129,7 @@ function renderProductData(){
   let filterDataHtml ="";
   if(filterData[0]){
     filterData.forEach(el=>{
-      filterDataHtml+=`<div class="productCard" onClick = "clickProduct(${el.id})">
+      filterDataHtml+=`<div class="productCard">
       <div class="product_image">
         <img src="./productImage/${el.img}
         " alt="">
@@ -144,7 +144,7 @@ function renderProductData(){
 }
 else{
   ProductData.forEach(el=>{
-    filterDataHtml+=`<div class="productCard" onclick  = "clickProduct(${el.id})">
+    filterDataHtml+=`<div class="productCard">
       <div class="product_image">
         <img src="./productImage/${el.img}
         " alt="">
