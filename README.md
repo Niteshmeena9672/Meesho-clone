@@ -1,4 +1,4 @@
-# [Meesho Clone Website](https://niteshmeena9672.github.io/meesho-clone-/)
+# [Meesho Clone Website](https://niteshmeena9672.github.io/Meesho-clone/)
 This project is a clone of the Meesho website, an online shopping site for fashion, electronics, home goods, and more. It is a responsive website built using HTML, CSS, and JavaScript.
 
 # Features
