@@ -1,12 +1,12 @@
-import BagsFootwear from "./data/BagsFootwear.js";
-import BeautyHealth from "./data/BeautyHealth.js";
-import Electronics from "./data/Electronics.js";
-import HomeAndKitchen from "./data/HomeAndKitchen.js";
-import JewelleryAccessories from "./data/JewelleryAccessories.js";
-import Kids from "./data/Kids.js";
-import Men from "./data/Men.js";
-import WomenEthnic from "./data/WomenEthnic.js";
-import WomenWestern from "./data/WomenWestern.js";
+import BagsFootwear from "./data/Navigation_bar/BagsFootwear.js";
+import BeautyHealth from "./data/Navigation_bar/BeautyHealth.js";
+import Electronics from "./data/Navigation_bar/Electronics.js";
+import HomeAndKitchen from "./data/Navigation_bar/HomeAndKitchen.js";
+import JewelleryAccessories from "./data/Navigation_bar/JewelleryAccessories.js";
+import Kids from "./data/Navigation_bar/Kids.js";
+import Men from "./data/Navigation_bar/Men.js";
+import WomenEthnic from "./data/Navigation_bar/WomenEthnic.js";
+import WomenWestern from "./data/Navigation_bar/WomenWestern.js";
 
 let inputSearchE1 = document.querySelector(".inputSearch");
 let recentInput = [];
@@ -98,3 +98,65 @@ renderSubMenu("bagsAndfootwear", BagsFootwear);
 renderSubMenu("Electronics", Electronics);
 
 
+// Product data 
+
+import ProductData from "./data.js";
+
+
+let filterData = [];
+
+document.addEventListener("click",(e)=>{
+  const category = new Set(ProductData.map(el=>el.category));
+const WatchEl = document.getElementById("Watch").checked;
+const bluetooth_HeadsetEl = document.getElementById("bluetooth_Headset").checked;
+const Men_ChainsEl = document.getElementById("Men_Chains").checked;
+const KurtasEl = document.getElementById("Kurtas").checked;
+const MobileEl_Accessories = document.getElementById("Mobile_Accessories").checked;
+const SareeEl = document.getElementById("Saree").checked;
+  filterData = ProductData.filter(el=>(
+    WatchEl && el.category =="watch"||
+    bluetooth_HeadsetEl && el.category =="bluetooth Headset"||
+    Men_ChainsEl && el.category =="Men Chains"||
+    KurtasEl && el.category =="Kurtas"||
+    MobileEl_Accessories && el.category =="Mobile Accessories"||
+    SareeEl && el.category =="sarees"
+  ))
+
+  renderProductData()
+})
+
+function renderProductData(){
+  let filterDataHtml ="";
+  if(filterData[0]){
+    filterData.forEach(el=>{
+      filterDataHtml+=`<div class="productCard">
+      <div class="product_image">
+        <img src="./productImage/${el.img}
+        " alt="">
+      </div>
+      <h3 id="product_name">${el.name}</h3>
+      <p class="product_price">
+        <span>₹${el.price}</span>
+      </p>
+    </div>`
+  })
+  // renderProductData();
+}
+else{
+  ProductData.forEach(el=>{
+    filterDataHtml+=`<div class="productCard">
+      <div class="product_image">
+        <img src="./productImage/${el.img}
+        " alt="">
+      </div>
+      <h3 id="product_name">${el.name}</h3>
+      <p class="product_price">
+      <span>₹${el.price}</span>
+      </p>
+      </div>`
+    })
+  }
+  
+  document.getElementById("product_category_displayID").innerHTML=filterDataHtml;
+};
+renderProductData();

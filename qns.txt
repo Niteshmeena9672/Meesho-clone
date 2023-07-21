@@ -11,3 +11,5 @@ what is use of root body
 Ans :
 :root is a pseudo selector while body is a type selector
 main difference is that root has higher priority than body
+qns 5:
+what is use of label
