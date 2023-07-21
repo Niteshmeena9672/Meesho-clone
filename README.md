@@ -18,7 +18,7 @@ Getting Started
 
 # To get a local copy of this project up and running, follow these steps:
 
-Clone the repository: git clone https://github.com/Niteshmeena9672/Meesho-clone-main.git
+Clone the repository: git clone https://github.com/Niteshmeena9672/Meesho-clone.git
 
 Navigate to the project directory: cd meesho-clone
 
