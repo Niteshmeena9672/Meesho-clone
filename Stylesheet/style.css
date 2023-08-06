@@ -1,20 +1,17 @@
-/* Define custom CSS variables */
+/* Navigation bar */
 :root {
-  --hoverTextColor: rgb(204, 39, 163); /* Color for text on hover */
-  --textColor: #605d5d; /* Default text color */
+  --hoverTextColor: rgb(204, 39, 163);
+  --textColor: #605d5d;
 }
-
-/* Styling for navigation bar */
 nav {
   width: 100%;
   border-bottom: 1px solid #ccc;
   font-weight: 510;
   height: 50px;
 }
-
-/* Styling for navigation bar list items */
 nav ul {
   padding: 0;
+
   list-style: none;
   display: flex;
   justify-content: space-between;
@@ -22,63 +19,68 @@ nav ul {
   height: 100%;
   margin: 0;
 }
-
-/* Styling for individual navigation bar list items */
 nav ul li {
   display: flex;
   /* background-color: red; */
   align-items: center;
   /* position: relative; */
 }
-
-/* Styling when hovering over navigation bar list items */
 nav ul li:hover {
   color: var(--hoverTextColor);
   border-bottom: 3px solid var(--hoverTextColor);
   cursor: pointer;
 }
 
-/* Styling for the submenu */
+/* Model box submenu */
+
 .subMenu {
   position: absolute;
   width: 99vw;
+
   top: 120px;
   left: 10px;
   right: 10px;
+  /* here we give position absolute so widht in % is taken according to it's parent element that's why we use vw height for adjusting height accoring to display */
+  /* use of vw */
   box-sizing: border-box;
+  /* what is box sizing */
   background-color: white;
   border: 1px solid #ccc;
   box-shadow: -1px 0px 1px 1px #ccc, 1px 0px 1px 1px #ccc;
+  /* box shadow orientaiton */
   /* height: 400px; */
   /* padding: 20px; */
   padding-left: 20px;
   display: none;
 }
 
-/* Show the submenu when hovering over the navigation bar list item */
 nav ul li:hover .subMenu {
+  /* position: absolute; */
   display: block;
+  /* background-color: red; */
 }
 
-/* Styling for text inside the submenu */
 .subMenu p {
   color: var(--textColor);
 }
-
-/* Additional styling for navigation bar list items */
+.subMenuList {
+  display: flex;
+}
 nav ul li {
   padding-right: 20px;
 }
+.column {
+  margin-right: 40px;
+}
 
-/* Styling for the container of lowest price section */
+/* lowest price section  */
+
 .lowestPriceContainer {
   background-color: rgb(248, 248, 255);
   display: flex;
   margin: 50px auto;
   max-width: 1100px;
 }
-
-/* Styling for the heading within the lowest price section */
 .lowestPriceContainer h1 {
   font-size: 40px;
   margin: 0px;
@@ -86,25 +88,21 @@ nav ul li {
   font-weight: 00;
 }
 
-/* Styling for the text content within the lowest price section */
 .lowestPriceText {
   width: 50%;
+  /* margin-top: 40px;
+    margin-left: 40px; */
   margin: 40px;
 }
-
-/* Styling for the images within the lowest price section */
 .lowestPriceImg {
   width: 50%;
 }
 
-/* Styling for the icons within the lowest price section */
 .lowestPriceIcon {
   width: 45px;
   border-radius: 35px;
   border: 1px solid grey;
 }
-
-/* Styling for the sub-sections within the lowest price section */
 .lowestPriceSub {
   display: flex;
   justify-content: space-between;
@@ -112,29 +110,22 @@ nav ul li {
   margin: 20px 0;
   width: 50%;
 }
-
-/* Styling for the individual items within the lowest price section */
 .lowestPriceItem {
   padding: 0px 20px;
   display: flex;
   align-items: center;
   background-color: white;
 }
-
-/* Styling for the bordered lowest price item */
 #borderLowestItem {
   border-right: 1px solid gray;
   border-left: 1px solid gray;
 }
-
-/* Styling for the text within the lowest price items */
 .lowestPriceItem p {
   padding-left: 10px;
   color: rgb(59, 53, 67);
   font-weight: 600;
 }
 
-/* Styling for the container of the download app section */
 .downloadAppContainer {
   background-color: rgb(159, 32, 137);
   display: flex;
@@ -147,39 +138,29 @@ nav ul li {
   padding: 20px 10px;
   margin-top: 35px;
 }
-
-/* Styling for the text within the download app section */
 .downloadAppContainer p {
   padding: 0 20px;
   color: white;
 }
-
-/* Styling for the download app icon */
 .downloadAppicon {
   margin-left: 10px;
 }
 
-/* Styling for the top categories section */
 .topCategoriesFrom {
   width: 1100px;
   margin: auto;
 }
-
-/* Styling for the heading within the top categories section */
 .topCategoriesHeading {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* Styling for the horizontal line separator within the top categories section */
 hr {
   width: 53%;
   /* background-color: black; */
   border: 1px solid var(--hoverTextColor);
 }
-
-/* Styling for the text within the top categories section */
 .topCategoriesHeading h1 {
   width: max-content;
   width: 800px;
@@ -187,17 +168,15 @@ hr {
   color: rgb(53, 53, 67);
   font-size: 35px;
 }
-
-/* Styling for the top categories image */
 .topCategoreisImage {
   width: 100%;
   height: 600px;
   background-image: url(https://images.meesho.com/images/marketing/1678691670429_1200.webp);
   background-repeat: no-repeat;
   margin-top: 50px;
+  /* display: flex;
+    align-items: flex-end; */
 }
-
-/* Styling for the images within the top categories image section */
 .topCategoreisImage img {
   /* display: flex; */
   /* position: absolute; */
@@ -209,13 +188,10 @@ hr {
   /* justify-content: center;
     align-items: center; */
 }
-
-/* Additional styling for the first child image within the top categories image section */
 .topCategoreisImage img:first-child {
   width: 410px;
 }
-
-/* Styling for the essential and new style sections */
+/* Essential and New Style section */
 .essentialsContainer,
 .newStyleContainer {
   width: 100%;
@@ -227,38 +203,27 @@ hr {
   align-items: center;
   /* justify-content: space-around; */
 }
-
-/* Additional styling for the background of the new style section */
 #newStylebg {
   background-image: url(../data/image_source/New_style-bg.webp);
 }
-
-/* Styling for images within the essential and new style sections */
 .essentialsContainer img,
 .newStyleContainer img {
   max-width: 180px;
 }
 
-/* Styling for individual items within the essential and new style sections */
 .esseneital_item,
 .newStyle_item {
   margin-left: 50px;
   margin-right: 20px;
 }
-
-/* Styling for the essential button */
 #essential_btn {
   margin-left: 100px;
   margin-top: 20px;
 }
-
-/* Styling for the new style button */
 #newStyle_btn {
   margin-left: 120px;
   margin-top: 70px;
 }
-
-/* Styling for the kitchen essential item */
 #kitchenEssential {
   width: 200px;
   height: 70px;
@@ -266,7 +231,6 @@ hr {
 
 /* *********************************** */
 
-/* Styling for the become seller banner container */
 .becomeSellerBanner_container {
   margin: 50px 0;
   position: relative;
@@ -274,41 +238,30 @@ hr {
   flex-direction: column;
   align-items: flex-end;
 }
-
-/* Styling for images within the become seller banner container */
+/* it is how you can put something in right side  */
 .becomeSellerBanner_container img {
   width: 100%;
 }
-
-/* Styling for the content within the become seller banner container */
 .becomeSeller_content {
   position: absolute;
   top: 20px;
   text-align: right;
   padding-right: 50px;
 }
-
-/* Styling for the download app button within the become seller banner container */
 .sellerBanner_downloadApp {
   position: absolute;
   top: 305px;
   right: 0;
 }
-
-/* Styling for the app download image within the become seller banner container */
 .becomeSeller_appDownload img {
   width: 243px;
   margin-right: 40px;
   height: 64px;
 }
-
-/* Styling for the heading 2 within the become seller content */
 .becomeSeller_content h2 {
   color: #5585f8;
   font-size: 34px;
 }
-
-/* Styling for the heading 1 within the become seller content */
 .becomeSeller_content h1 {
   color: #9f2089;
   font-size: 48px;
@@ -322,43 +275,34 @@ hr {
   border-right: 2px solid white;
   font-size: 16px;
 }
-
-/* Additional styling for the "Sell Product" element within the Supplier container */
 #meeshoSupplier_sellProduct {
   font-size: 18px;
 }
-
-/* Styling for the content within the Supplier container */
 .meeshoSupplier_content {
   padding-left: 40px;
 }
-
-/* Styling for the benefit container within the Supplier container */
-.messho_supplier_benefit_container {
+.messho_supplier_benefit :first-child {
+  padding: 0px;
+  padding-right: 20px;
+}
+.meeshoSupplier_benefit_container {
   display: flex;
   margin: 5px 0px;
 }
-
-/* Styling for the Supplier container */
 .meeshoSupplier_container {
   position: relative;
 }
-
-/* Styling for the content within the Supplier container */
 .meeshoSupplier_container_content > p {
   font-size: 34px;
 }
-
-/* Styling for the content container within the Supplier container */
 .meeshoSupplier_container_content {
   position: absolute;
   top: 0;
   padding: 5px 10px;
   color: white;
+
   height: 10px;
 }
-
-/* Styling for the "Signup Now" button within the Supplier container */
 .signup_btn_now {
   position: absolute;
   background-color: white;
@@ -373,30 +317,22 @@ hr {
   margin-top: 10px;
   border-radius: 10px;
 }
-
-/* Styling for the "You" product container */
 .Product_container_you {
   /* display: flex; */
   min-height: 500px;
   /* background-color: gray; */
   padding: 10px;
 }
-
-/* Styling for the content within the "You" product container */
 .Product_container_you_content {
   display: grid;
   grid-template-columns: 280px 1fr;
   height: 100%;
   gap: 30px;
 }
-
-/* Styling for the aside section within the "You" product container */
 .product_category_you_aside {
   /* background-color: red; */
   height: 100%;
 }
-
-/* Styling for the display grid within the "You" product container */
 .product_category_display {
   /* background-color: green; */
   height: 100%;
@@ -405,9 +341,8 @@ hr {
   grid-auto-rows: auto;
   /* flex-wrap: wrap;
   flex-direction: column; */
-}
 
-/* Styling for the search input within the category section */
+}
 .search_Category_input {
   display: flex;
   padding: 15px;
@@ -416,8 +351,6 @@ hr {
   border-radius: 5px;
   width: 100%;
 }
-
-/* Styling for the input field within the search input */
 .search_Category_input input {
   /* display: flex; */
   font-size: 18px;
@@ -426,20 +359,14 @@ hr {
   outline: none;
   padding: 0px 10px;;
 }
-
-/* Styling for the display category list */
 .display_category_list{
-  padding: 20px 10px;  
+    padding: 20px 10px;  
 }
-
-/* Styling for the individual items within the display category list */
 .display_category_list{
   display: flex;
   padding: 20px 0px;
   flex-direction: column;
 }
-
-/* Styling for the label within the display category list */
 .display_category_list label{
   /* background-color: red; */
   width: 60%;
@@ -447,8 +374,6 @@ hr {
   text-transform: capitalize;
   /* background-color: red; */
 }
-
-/* Styling for the product card */
 .productCard{
   border: 1px solid #ccc;
   max-width: 250px;
@@ -459,23 +384,18 @@ hr {
   margin: 10px 0px;
   /* display: flex; */
 }
-
-/* Styling for the product image container */
 .product_image{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-/* Styling for the product image */
 .product_image img{
   /* max-width: 200px; */
   height: 200px;
   width: fit-content;
+ 
 }
-
-/* Styling for the product name */
 #product_name{
   padding: 0 5px;
   margin: 10px 0px;
@@ -484,8 +404,6 @@ hr {
   text-transform: capitalize;
   color: gray;
 }
-
-/* Styling for the product price */
 .product_price{
   padding: 0 5px;
   margin: 5px 0px;
