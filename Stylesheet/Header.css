@@ -1,50 +1,62 @@
-*{
+/* Box-sizing for all elements */
+* {
     box-sizing: border-box;
 }
 
-:root{
+/* Root variables */
+:root {
     --hoverTextColor: rgb(204, 39, 163);
-    --textColor :#605d5d;
+    --textColor: #605d5d;
 }
 
-body{
+/* Body styling */
+body {
     margin: 0;
     padding: 0;
     width: 100%;
     font-family: 'Roboto', sans-serif;
-    color: var(--textColor)
-
+    color: var(--textColor);
 }
 
-.header{
+/* Header styling */
+.header {
     height: 72px;
     /* background-color: red; */
     /* outline: 1px solid #CCC; */
     margin: 0px 280px;
     /* padding-left: 80px; */
     display: flex;
-    /* Here height will be middle of 75 px  */
-    align-items: center; 
-    justify-content: space-between;  
-    /* What is justify between */
+    /* Height will be middle of 75px */
+    align-items: center;
+    justify-content: space-between;
+    /* Justify between will distribute space between items */
     /* font-weight: 510; */
 }
-.headerRight,.headerLeft{
+
+/* Styling for header sections - left and right */
+.headerRight, .headerLeft {
     display: flex;
     align-items: center;
 }
-img{
+
+/* Image styling */
+img {
     width: 100%;
 }
-/*This will take width according to its parent(image)  */
-.logoContainer{
-width: 160px;
+
+/* Logo container styling */
+.logoContainer {
+    width: 160px;
 }
-.searchIcon{
+
+/* Search icon styling */
+.searchIcon {
     width: 30px;
     padding: 5px;
 }
-.searchInputContainer{
+
+/* Search input container styling */
+.searchInputContainer {
     width: 400px;
     height: 45px;
     outline: 1px solid #ccc;
@@ -55,17 +67,22 @@ width: 160px;
     padding: 7px;
     position: relative;
 }
-form{
+
+/* Form styling */
+form {
     width: 100%;
 }
-.inputSearch{
+
+/* Search input styling */
+.inputSearch {
     width: 100%;
     border: none;
     outline: none;
     font-size: 16px;
 }
 
-.searchRecentModal{
+/* Styling for the search recent modal */
+.searchRecentModal {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -75,51 +92,60 @@ form{
     width: 100%;
     display: none;
     padding: 15px;
-    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
-    border-radius:0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 0px 0px 20px 20px;
 }
-.searchInputContainer:focus-within .searchRecentModal{
+
+/* Display the search recent modal on focus within the search input container */
+.searchInputContainer:focus-within .searchRecentModal {
     display: block;
 }
-.recentIcon{
+
+/* Styling for recent items */
+.recentIcon {
     width: 20px;
     margin-right: 15px;
 }
-.recentItem{
+
+/* Styling for recent items */
+.recentItem {
     display: flex;
     align-items: center;
 }
 
-
-/* Right item */
-
-.mobileIcon{
+/* Styling for right items - mobile icon, download container */
+.mobileIcon {
     width: 15px;
     margin: 5px;
 }
-.downloadContainer{
+
+/* Styling for the download container */
+.downloadContainer {
     display: flex;
     align-items: center;
     height: 100%;
-    position: relative;;
-    
+    position: relative;
 }
-.downloadContainer:hover{
+
+/* Styling for download container on hover */
+.downloadContainer:hover {
     color: var(--hoverTextColor);
     cursor: pointer;
-    
 }
-.downloadBtn{
+
+/* Styling for download button */
+.downloadBtn {
     display: block;
-    width:160px ;
+    width: 160px;
     margin-top: 10px;
     /* box-shadow: 0px 0px 5px rgba(0,0,0,0.3); */
 }
-.downloadHoverBtnContainer{
+
+/* Styling for download hover button container */
+.downloadHoverBtnContainer {
     position: absolute;
     bottom: 0;
     top: 45px;
-    
     width: 100%;
     /* background-color: red; */
     display: none;
@@ -128,42 +154,54 @@ form{
     color: var(--textColor);
     background-color: white;
     border-radius: 0px 0px 10px 10px;
-    
-    
 }
-.downloadContainer:hover .downloadHoverBtnContainer{
+
+/* Display the download hover button container on hover */
+.downloadContainer:hover .downloadHoverBtnContainer {
     display: block;
 }
-.downloadContainer P{
+
+/* Styling for download button text */
+.downloadContainer P {
     margin: 0;
     padding: 0;
     font-size: 17px;
     padding: 20px;
 }
 
-.profileAndCart{
+/* Styling for profile and cart items */
+.profileAndCart {
     display: flex;
     align-items: center;
 }
-/* what is use of focus */
-.profileAndCart :hover,.profileAndCart:focus{
+
+/* Styling for profile and cart items on hover/focus */
+.profileAndCart:hover, .profileAndCart:focus {
     color: var(--hoverTextColor);
 }
-.profileIcon,.cartIcon{
+
+/* Styling for profile and cart icons */
+.profileIcon, .cartIcon {
     width: 20px;
 }
+
+/* Styling for profile and cart item text */
 .profileAndCart p {
     margin: 0;
     padding: 0;
 }
-.profileContainer ,.cartContainer{
+
+/* Styling for profile and cart container */
+.profileContainer, .cartContainer {
     padding: 0px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.becomeSupplierContainer{
+
+/* Styling for the become supplier container */
+.becomeSupplierContainer {
     height: 40px;
     display: flex;
     align-items: center;
